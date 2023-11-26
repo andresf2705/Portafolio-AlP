@@ -1,12 +1,23 @@
+
+
 body {
-    margin: 10;
-    padding: 20;
-    width: -20px;
-    height: -10px;
-    background-image: url(https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg);
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1510936111840-65e151ad71bb?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed;
+}
+
+.header-background {
+    width: 100%;
+    transition: 0.3s; 
+}
+
+.body-content {
+    margin-top: 100px; 
 }
 
 .navbar-brand {
@@ -16,7 +27,7 @@ body {
 
 .logo-img {
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 110, 255, 0.7); /* Sombra suave alrededor del logo */
+    box-shadow: 0 0 10px rgba(0, 110, 255, 0.7); 
 }
 
 .branding {
@@ -30,15 +41,15 @@ body {
 }
 
 .brand-name {
-    font-size: 34px; /* Hacer el texto un poco más grande */
-    animation: scaleAndFade 2s infinite alternate; /* Animación continua de escala y opacidad */
+    font-size: 34px; 
+    animation: scaleAndFade 2s infinite alternate; 
 }
 
 .tagline {
-    font-size: 16px; /* Hacer el texto un poco más grande */
+    font-size: 16px; 
 }
 
-/* Animación continua de escala y opacidad */
+
 @keyframes scaleAndFade {
     from {
         transform: scale(1);
@@ -50,11 +61,11 @@ body {
     }
 }
 
-/* Elemento fijo al hacer scroll */
+
 .fixed-element {
     position: fixed;
-    top: 10px; /* Ajusta según la posición que desees */
-    left: 20px; /* Ajusta según la posición que desees */
+    top: 10px; 
+    left: 20px; 
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 5px;
@@ -63,21 +74,21 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* Mostrar el elemento fijo al hacer scroll hacia abajo */
+
 body.scroll-down .fixed-element {
     opacity: 1;
 }
 
-/* Ocultar el elemento fijo al hacer scroll hacia arriba */
+
 body.scroll-up .fixed-element {
     opacity: 0;
 }
 
 .card {
-    border: 3px solid blue;
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 10px;
     overflow: hidden;
-    max-height: 300px; /* Ajusta la altura máxima según tus necesidades */
+    max-height: 300px;
     transition: transform 0.3s ease-in-out;
   }
 
@@ -138,3 +149,59 @@ body.scroll-up .fixed-element {
     color: #6c757d;
     cursor: not-allowed;
   }
+  .my-table {
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .my-table .col {
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .my-table {
+        margin-top: 20px;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        animation: fadeIn 1s ease-in-out;
+      }
+  
+      .my-table .col {
+        padding: 30px;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #ffffff;
+      }
+  
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .Categoria1{
+        text-align: center;
+        color: #fff;
+      }
+
+      #carouselExampleIndicators {
+        overflow: hidden;
+      }
+  
+      .carousel-inner img {
+        width: 100%;
+        height: auto;
+      }
+
+      .col-8{
+        color: #fff;
+      }
