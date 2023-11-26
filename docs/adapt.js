@@ -1,3 +1,5 @@
+// Contenido de adapt.js
+
 // Script para mejorar la adaptabilidad y el scroll
 document.addEventListener("DOMContentLoaded", function() {
     // Asegurar que el contenido sea visible después de cargar
@@ -19,3 +21,28 @@ document.addEventListener("DOMContentLoaded", function() {
         lastScroll = currentScroll;
     });
 });
+
+$(document).ready(function(){
+    $('#carouselExampleIndicators').carousel({
+      interval: 2000
+    });
+
+    $('#carouselExampleIndicators').hover(function(){
+      $(this).carousel('pause');
+    }, function(){
+      $(this).carousel('cycle');
+    });
+});
+window.onscroll = function () {
+    stickyHeader();
+};
+
+function stickyHeader() {
+    var header = document.getElementById("header");
+
+    if (window.pageYOffset > 0) {
+        header.classList.add("header-fixed");
+    } else {
+        header.classList.remove("header-fixed");
+    }
+}
