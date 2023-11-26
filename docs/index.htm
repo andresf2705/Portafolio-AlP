@@ -10,82 +10,87 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    
+<body>
     <header class="header-background">
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="Img/logo.2.png" alt="Logo" width="210" height="210" class="d-inline-block align-text-top">
-                    <div class="smoke">
-                        <p class="fant">PORTAFOLIO DE PRODUCTOS </p>
-                    
+                    <img src="Img/logo.2.png" alt="Logo" width="150" height="150" class="d-inline-block align-text-top logo-img">
+                    <div class="branding">
+                        <p class="brand-name">Portafolio de Productos</p>
+                        <p class="tagline">Comercialización de Productos y/o Servicios</p>
                     </div>
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Navbar</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Features</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Pricing</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-    <div class="content-container">
-        <div class="smoke">
-            <span class="blur-text"><b>COMERCIALIZACIÓN DE PRODUCTOS Y/O SERVICIOS</b></span>
-        </div>
+    <div class="static-logo-img">
+        <img src="Img/logo.2.png" alt="Logo" width="50" height="50">
     </div>
-    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">Pagina 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Pagina 2</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#scrollspyHeading3">Pagina de conceptos</a></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading4">Pagina de productos</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading5">mas</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-        <h4 id="scrollspyHeading1">Pagina 1</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading2">pagina 2</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading3">Pagina 3</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading4">Pagina 5</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading5">Pagina</h4>
-        <p>...</p>
-      </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="adapt.js"></script>
+<div class="fixed-element">
+    <p>Fijo al hacer scroll</p>
+</div>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h3>¿Que es un portafolio de productos?</h3>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Esto es un Portafolio de Productos Y/O Servicios.</strong>Un portafolio de servicios puede adoptar la forma de un documento físico o una presentación digital en línea, a través de la cual una empresa o un proveedor de servicios específico tiene la oportunidad de detallar información relevante sobre su negocio. Esto facilita a los clientes el conocimiento más profundo sobre su trabajo o su empresa<code>.En este caso, se presenta en formato web</code>, para una accesibilidad óptima y una experiencia interactiva que permite a los interesados explorar fácilmente los detalles de los servicios ofrecidos.
+        </div>
+      </div>
+    </div>
+     <br>
+     <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">En un contexto de portafolio</h5>
+              <p class="card-text">Los productos afines se organizan de manera sistemática en categorías o líneas específicas. Dentro de cada línea, se lleva a cabo una agrupación estratégica que engloba productos provenientes de diversas marcas, con variados modelos, rangos de precios y dimensiones.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">CATEGORÍA DE PRODUCTOS</h2>
+              <p class="card-text">Las categorías de producto constituyen la modalidad principal de clasificación de productos que comparten características similares. Por ejemplo, en el caso de la marca Alpina, se observan diversas categorías que abarcan diferentes tipos de productos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <ul class="list-group">
+        <li class="list-group-item">A disabled item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
 </body>
 </html>
